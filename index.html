@@ -8,7 +8,7 @@ alert(num+1);
 var isprime = 1;
 for(var j=1;j<num;j++){
 for(var i=2;i<j;i++){
-  if(j%i == 0){isprime=0}
+  if(j%i == 0){isprime=0;i=j;}
 };if(isprime==1){
 document.getElementById("res").innerHTML += "<br>"+j;
 }}}
