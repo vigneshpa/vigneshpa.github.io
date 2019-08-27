@@ -2,6 +2,14 @@
 <Head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
+function sleep(miliseconds) {
+   var currentTime = new Date().getTime();
+
+   while (currentTime + miliseconds >= new Date().getTime()) {
+   }
+}
+
+
 function exem(){
 var nums=document.getElementById("inp").value;
 var num =parseFloat(nums);
@@ -13,6 +21,7 @@ for(var i=2;i<j;i++){
 };if(isprime==1){
 var dat=document.getElementById("res").innerHTML;
 document.getElementById("res").innerHTML = ""+j+"<br>"+dat;
+sleep(1000);
 }}}
 function clr(){
 document.getElementById("res").innerHTML ="";
