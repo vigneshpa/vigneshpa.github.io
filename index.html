@@ -14,11 +14,14 @@ for(var i=2;i<j;i++){
 var dat=document.getElementById("res").innerHTML;
 document.getElementById("res").innerHTML = ""+j+"<br>"+dat;
 }}}
+function clr(){
+document.getElementById("res").innerHTML ="";
+}
 </script>
 </head>
 <body>
 <div>Enter the number within which you have to find all the prime numbers.</div>
-<div><input type="num" id="inp"><button onClick="exem()">submit</button></div>
+<div><input type="num" id="inp"><button onClick="exem()">Submit</button><button onClick="clr()">Clear</button></div>
 <div id="res"><br>developed by Vignesh at SVCE.</div>
 </body>
 </Html>
