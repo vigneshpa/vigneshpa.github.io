@@ -1,5 +1,6 @@
 <html>
 <Head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 function exem(){
 var nums=document.getElementById("inp").value;
@@ -11,7 +12,8 @@ isprime=1;
 for(var i=2;i<j;i++){
   if(j%i == 0){isprime=0;i=j;}
 };if(isprime==1){
-document.getElementById("res").innerHTML += "<br>"+j;
+var dat=document.getElementById("res");
+document.getElementById("res").innerHTML = "<br>"+j+dat;
 }}}
 </script>
 </head>
